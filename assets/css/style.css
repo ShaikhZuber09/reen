@@ -1,0 +1,371 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-pri:#506a85;
+    --color-sec:#a3b1bf;
+    --color-trt:#73879c;
+    --color-white:#fff;
+    --color-dark:#000;
+    --color-white1:#f5f7f9;
+    --color-dark2:#2f3f51;
+    --color-green:#00bb9b;
+
+    
+}
+a,
+a:active,
+a:focus,
+a:hover{
+    text-decoration: none;
+}
+.mainheading{
+    margin-top: 0;
+    font-size: 44px;
+    font-weight: bold;
+    color: var(--color-pri);
+    margin-bottom: 45px;
+}
+.para{
+    font-size: 22px;
+    color: var(--color-trt);
+    margin-bottom: 90px;
+}
+/* ---------- header css starts here ----------- */
+.hyper-links {
+    background-color: var(--color-white1);
+    padding: 1rem 0;
+}
+.hyper-links ul{
+    display: inline-block;
+    margin-bottom: 0;
+}
+.hyper-links .contact a i {
+    color: var(--color-pri);
+    padding: 2px 10px 2px 0;
+    font-size: 1.8rem;
+    vertical-align: middle;
+}
+.hyper-links .contact a {
+    margin-right: 1rem;
+    color: var(--color-pri);
+    font-size: 1.2rem;
+}
+.hyper-links .soci-links li a {
+    color: var(--color-pri);
+    font-size: 1.2rem;
+}
+header .navbar-header{
+    height: 11rem;
+    background-color: var(--color-white);
+}
+header .navbar-brand{
+    padding: 3.5rem 1.5rem;
+    height: 11rem;
+}
+header .navbar-brand img{
+    width: 100%;
+}
+header .navbar-nav li a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-pri);
+    text-transform: uppercase;
+    margin-top: 3.5rem;
+}
+header .navbar-nav li a:hover,
+header .navbar-nav li a:active,
+header .navbar-nav li a:focus{
+    background-color: transparent;
+}
+header .navbar-nav li a::after,
+header .navbar-nav li a::before {
+    content: "";
+    background: var(--color-pri);
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    transition: all 0.7s ease-in-out;
+}
+
+header .navbar-nav li a::after {
+    bottom: 0;
+    right: 0;
+
+}
+
+header .navbar-nav li a::before {
+    top: 0;
+    left: 0;
+}
+
+header .navbar-nav li a:hover::after,
+header .navbar-nav li a:hover::before,header .navbar-nav li a:active::after,
+header .navbar-nav li a:active::before,header .navbar-nav li a:focus::after,
+header .navbar-nav li a:focus::before {
+    width: 100%;
+}
+
+header .navbar-toggle {
+    margin-top: 3.5rem;
+    border: 1px solid var(--color-pri);
+}
+header .icon-bar{
+    background-color: var(--color-pri);
+}
+header .navbar{
+    margin-bottom: 0;
+}
+/* ---------- header css ends here ----------- */
+
+/* ---------- hero css starts here ----------- */
+.hero {
+    padding: 30rem 0;
+    background-image: url(../images/imagebg.jpg);
+}
+.hero .main-info h1 {
+    font-size: 7.8rem;
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(--color-white);
+    margin-top: -2rem;
+    margin-bottom: 3.5rem;
+}
+.hero .main-info p {
+    font-size: 2.4rem;
+    color: var(--color-sec);
+    margin-bottom: 6rem;
+}
+.hero .main-info a {
+    background-color: var(--color-green);
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 25px 70px;
+    text-transform: uppercase;
+    color: var(--color-white);   
+    border-radius: 3px;
+    border: 2px solid var(--color-green);
+    transition: all 0.7s ease-in-out;
+}
+.hero .main-info a:hover {
+    background-color: var(--color-white);
+    color: var(--color-green);
+}
+/* ---------- hero css ends here ----------- */
+
+/* ---------- features css starts here ----------- */
+.features {
+    padding: 12.5rem 0;
+    background-color: var(--color-white);
+}
+.thumb-info h2 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: var(--color-pri);
+    margin-bottom: 35px;
+}
+
+.thumb-icon {
+    padding-top: 1.8rem;
+    color: var(--color-green);
+}
+
+.thumb-info p {
+    font-size: 1.6rem;
+    color: var(--color-trt);
+}
+/* ---------- features css ends here ----------- */
+
+/* ----------latest-work  css starts here ----------- */
+.latest-works {
+    padding: 13.5rem 0;
+    background-color:var(--color-white1);
+}
+.works img, .picture img{
+    margin-bottom: 1rem;
+}
+.work-info .para {
+    margin-bottom: 70px;
+}
+.latest-works .thumbnail h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-pri);
+    margin-bottom: 14px;
+}
+.latest-works .thumbnail{
+    margin-bottom: 4rem;
+}
+
+.latest-works .thumbnail p {
+    font-size: 14px;
+    color: var(--color-trt);
+}
+/* ---------- latest-work css ends here ----------- */
+
+/* ---------- get-in-touch css starts here ----------- */
+.get-in-touch {
+    padding: 13rem 0;
+    background-color: #ffffff;
+}
+
+.get-in-touch p {
+    margin-bottom: 4.2rem;
+}
+
+.get-in-touch a {
+    background-color: var(--color-green);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-white);
+    padding: 2rem 2.5rem;
+    border-radius: 3px;
+    border: 2px solid var(--color-green);
+    transition: all 0.7s ease-in-out;
+}
+
+.get-in-touch a:hover {
+    background-color: var(--color-white);
+    color: var(--color-green);
+}
+/* ---------- get-in-touch css ends here ----------- */
+
+/* ---------- footer css starts here ----------- */
+.footer-info {
+    padding: 7.5rem 0;
+    background-color:var(--color-dark2) ;
+}
+.footer-info h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.footer-info .about figure a img {
+    height: 33px;
+    margin-bottom: 25px;
+}
+
+.footer-info p {
+    font-size: 14px;
+    color: #a3b1bf;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.footer-info .about>a {
+    font-size: 15px;
+    font-weight: bold;
+    color: #a3b1bf;
+}
+
+address i,
+.touch li a i {
+    padding: 0 10px 10px 0;
+    color: #a3b1bf;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.touch a,
+address {
+    font-size: 14px;
+    color: #a3b1bf;
+}
+
+.updates input {
+    width: 270px;
+    height: 40px;
+    color: #a3b1bf;
+    background-color: #4e5c6b;
+    border-style: none;
+    border-radius: 2px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+
+
+.footer-links {
+    background-color: #273545;
+    padding: 35px 0;
+}
+
+
+.footer-links  ul li a,
+.footer-links span {
+    font-size: 14px;
+    color: #506a85;
+    text-transform: capitalize;
+    padding: 0 0 0 6px;
+}
+
+.form {
+    position: relative;
+}
+
+.form button {
+    background-color: #00bb9b;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+    border: 2px solid #00bb9b;
+    border-radius: 2px;
+    position: absolute;
+    top: 4px;
+    left: 202px;
+}
+
+.form button:hover {
+    background-color: #ffffff;
+    color: #00bb9b;
+}
+/* ---------- footer css ends here ----------- */
+
+/* ----------media query  css for small screen devices starts here ----------- */
+@media all and (max-width:992px){
+    header .navbar-brand {
+        padding: 3.5rem 1rem;
+        width: 12rem;
+    }
+    header .nav>li>a {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+    .get-in-touch, .footer-info, .latest-works, .features, .hero{
+        padding:7rem 0;
+    }
+    .footer-links{
+        display: none;
+    }
+
+
+}
+/* ----------media query  css for extra small screen devices starts here ----------- */
+
+@media all and (max-width:768px) {
+    .para {
+        margin-bottom: 5rem;
+    }
+    .updates input {
+       display: block;
+       width: 100%;
+    }
+    header .navbar-nav li a {
+        margin-top: 0;
+    }
+    .form button {
+        position: absolute;
+        left: initial;
+        top: 4px;
+       right: 5px;
+    }
+}
