@@ -368,4 +368,7 @@ address {
         top: 4px;
        right: 5px;
     }
+    .hero .main-info a {
+        padding: 1rem;
+    }
 }
